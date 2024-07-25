@@ -17,6 +17,10 @@ app.get("/test", (req, res) => {
   res.send("Server is running!");
 });
 
+app.get("/", (req, res) => {
+  res.send("Welcome to the server!");
+});
+
 app.use("/api/user", userRoutes);
 app.use("/api/admin", adminRoutes);
 
