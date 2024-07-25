@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost:27017/nith-mentorship"
+  "mongodb+srv://tpaul:6283588549@cluster0.sxpis5j.mongodb.net/mentorship"
 );
 
 const connection = mongoose.connection;
